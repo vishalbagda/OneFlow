@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { ProgressBar } from "@/components/ui/ProgressBar";
+export default function RegisterLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <main className="min-h-screen px-5 py-6 sm:px-8"><div className="mx-auto max-w-3xl"><header className="mb-8 flex items-center justify-between"><Link href="/" className="font-serif text-xl font-medium">One-Flow</Link><span className="text-xs font-medium uppercase tracking-[0.12em] text-slate">Independent prototype</span></header><ProgressBar currentStep={1} /><div className="mt-8">{children}</div></div></main>; }
